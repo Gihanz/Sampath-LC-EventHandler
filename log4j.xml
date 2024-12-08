@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration  xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="fileApp"
+		class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/fs1/IBM/SB/LC/logs/AdddocEventHandler.log" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="50" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%-d: %-p %-c{1} [%-M:%-L] - %m %n" />
+		</layout>
+	</appender>
+	<appender name="fileAppError"
+		class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/fs1/IBM/SB/LC/logs/AdddocEventHandlerError.log" />
+		<param name="Threshold" value="WARN" />
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%-d: %-p %-c{1} [%-M:%-L] - %m %n" />
+		</layout>
+	</appender>
+	<appender name="consoleApp"
+		class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p [%-M] - %m %n" />
+		</layout>
+	</appender>
+	<category name="com.sampath.lc.eventaction.handler.AddDocumentEventHandler" additivity="false">
+		<priority value="debug" />
+		<appender-ref ref="fileApp" />
+		<appender-ref ref="fileAppError" />
+	</category>
+	<root>
+		<priority value="error" />
+	</root>
+
+</log4j:configuration>

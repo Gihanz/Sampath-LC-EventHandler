@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="Jace.jar"/>
+	<classpathentry kind="lib" path="javaapi.jar"/>
+	<classpathentry kind="lib" path="javax.mail.jar"/>
+	<classpathentry kind="lib" path="javax.mail.jar.zip"/>
+	<classpathentry kind="lib" path="log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="log4j.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="engine.jar"/>
+	<classpathentry kind="lib" path="jace-5.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

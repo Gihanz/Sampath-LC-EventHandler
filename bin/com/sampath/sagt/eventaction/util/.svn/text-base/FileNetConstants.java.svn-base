@@ -1,0 +1,9 @@
+package com.sampath.lc.eventaction.util;
+
+public class FileNetConstants {
+
+	
+	public static String REFERENCE_NO ="LOC_FileReferenceNumber";
+	public static String LC_CASE_TYPE = "LOC_LetterOfCredit";
+	
+}
