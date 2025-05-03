@@ -55,7 +55,7 @@ import com.sampath.sagt.eventaction.util.PropertyLoader;
 
 /**
  * 
- * @author Mahesh G
+ * @author Gihan
  *
  */
 public class AddDocumentEventHandler implements EventActionHandler {

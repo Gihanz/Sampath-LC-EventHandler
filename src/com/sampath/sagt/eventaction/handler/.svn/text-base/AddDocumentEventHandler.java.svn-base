@@ -55,7 +55,7 @@ import com.sampath.lc.eventaction.util.PropertyLoader;
 
 /**
  * 
- * @author Mahesh G
+ * @author Gihan
  *
  */
 public class AddDocumentEventHandler implements EventActionHandler {
